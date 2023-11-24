@@ -1,0 +1,25 @@
+.column {
+    float: left;
+    width: 45%;
+    padding: 2rem 2rem 2rem;
+    border-radius: 2rem;
+  }
+
+  .row {
+    width: 100%;
+    padding: 2rem 2rem 2rem;
+    margin: auto;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
